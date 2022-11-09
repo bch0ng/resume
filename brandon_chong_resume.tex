@@ -1,0 +1,177 @@
+%-------------------------
+% Resume in Latex
+% Author : Sourabh Bajaj
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+% Just in case someone needs a heading that does not need to be in a list
+\newcommand{\resumeHeading}[4]{
+    \begin{tabular*}{0.99\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{http://sourabhbajaj.com/}{\Large Brandon Chong}} & Email : \href{mailto:iam@brandonchong.com}{iam@brandonchong.com}\\
+  \href{http://brandonchong.com/}{http://www.brandonchong.com} \\
+\end{tabular*}
+
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Neeva}{Mountain View, CA}
+      {Software Engineer}{Jul. 2020 - Present}
+      \resumeItemListStart
+        \resumeItem{Reddit Summarization}
+          {Led product decisions and client-side development.}
+        \resumeItem{Forums discussion onebox (Reddit, StackOverflow, and Quora)}
+          {Client-side integration of distinguised forum discussions UI+UX onto the Neeva search page.}
+        \resumeItem{User-generated content (UGC)}
+          {Client-side integration of Reddit into the Neeva search page. Redesign of StackOverflow and Quora on the search page as well.}
+        \resumeItem{Full-page search experiences (FPE)}
+          {Immersive user interfaces and experiences for sports and travel queries.}
+        \resumeItem{NewsGuard}
+          {Client-side implementation for letting users view NewsGuard ratings regarding a domain (i.e. how trustable it is, etc)}
+        \resumeItem{Preferred providers}
+          {Client-side implementation for letting users determine what domains they would like to see more of and less of in the search results.}
+        \resumeItem{Currency conversion, translation, sports, and lyrics oneboxes}
+          {Tablestakes features to reach parity with other search engines for presenting simple quick answers on specific queries.}
+        \resumeItem{LensBang}
+          {Client-side implementation allowing DuckDuckGo-like search re-direction and Neeva search result filtering.}
+        \resumeItem{GeoLocation prompt}
+          {Client-side implementation to prompt a user to submit their device location for an enhanced searching experience.}
+        \resumeItem{Neeva Maps (Apple Maps ver.)}
+          {Client-side implementation for integrating Apple Maps into Neeva Maps.}
+        \resumeItem{Neeva Maps + Directions (Google Maps ver.)}
+          {Client-side implementation for integrating Google Maps into Neeva Maps and Directions.}
+      \resumeItemListEnd
+      
+    \resumeSubheading
+      {University of Washington: College of Engineering}{Seattle, WA}
+      {Student Web Developer}{Feb. 2018 - Jun. 2020}
+      \resumeItemListStart
+        \resumeItem{UAPP engineering major application}
+          {Application for students to apply for their desired engineering major and for admins to review applications. Worked across the stack to revamp UI, address bugs/issues, and maintain existing logic.}
+        \resumeItem{Engineering scholarship application}
+          {Application for students to submit their scholarship application for review and for admins to review applications. Worked across the stack to revamp UI, address bugs/issues, and maintain existing logic.}
+        \resumeItem{Engineering faculty software request application}
+          {Application for faculty to submit their request for needed software (e.g. AutoCAD, MatLab, etc) and for admins to review requests. Worked across the stack to revamp UI, address bugs/issues, and maintain existing logic.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Washington}{Seattle, WA}
+      {Bachelor of Science in Informatics}{Sep. 2016 - Jun. 2020}
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------------
+\section{Projects}
+  \resumeSubHeadingListStart
+    \resumeSubItem{Personal Site}
+      {Personal site written with GatsbyJS, TypeScript, Vercel serverless functions, and AWS DynamoDB.}
+    \resumeSubItem{Chemodel 3D and AR}
+      {iOS app to render chemical molecule structures in 3D using augmented reality.}
+  \resumeSubHeadingListEnd
+
+
+%--------PROGRAMMING SKILLS------------
+\section{Programming Skills}
+  \resumeSubHeadingListStart
+    \item{
+      \textbf{Languages}{: Javascript, TypeScript, Go, CSS}
+      \hfill
+      \textbf{Technologies}{: React, NodeJS}
+    }
+  \resumeSubHeadingListEnd
+
+
+\end{document}
